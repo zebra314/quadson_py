@@ -1,0 +1,422 @@
+<robot name="quadson" version="1.0">
+  <joint name="fl_joint0" type="revolute">
+    <limit lower="-3.14000" upper="3.14000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="-0.00000 1.57080 0.00000" xyz="0.20500 0.09541 0.00215"/>
+    <parent link="base_link"/>
+    <child link="fl_link0"/>
+    <axis xyz="0.00000 0.00000 1.00000"/>
+  </joint>
+  <joint name="fl_joint1" type="revolute">
+    <limit lower="-3.14000" upper="3.14000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="-1.57080 -1.57080 0.00000" xyz="-0.00026 0.01767 -0.05190"/>
+    <parent link="fl_link0"/>
+    <child link="fl_link1"/>
+    <axis xyz="0.00000 0.00000 1.00000"/>
+  </joint>
+  <joint name="fl_joint2" type="revolute">
+    <limit lower="-3.14000" upper="3.14000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="-0.00000 0.00000 0.00000" xyz="0.07999 0.00001 0.00825"/>
+    <parent link="fl_link1"/>
+    <child link="fl_link2"/>
+    <axis xyz="0.00000 0.00000 1.00000"/>
+  </joint>
+  <joint name="fl_joint4" type="revolute">
+    <limit lower="-3.14000" upper="3.14000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="-0.00000 0.00000 0.00000" xyz="-0.00001 0.07999 0.00825"/>
+    <parent link="fl_link5"/>
+    <child link="fl_link4"/>
+    <axis xyz="0.00000 0.00000 1.00000"/>
+  </joint>
+  <joint name="fl_joint5" type="revolute">
+    <limit lower="-3.14000" upper="3.14000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="-1.57080 -1.57080 0.00000" xyz="-0.00023 0.01767 -0.13390"/>
+    <parent link="fl_link0"/>
+    <child link="fl_link5"/>
+    <axis xyz="0.00000 0.00000 1.00000"/>
+  </joint>
+  <joint name="fr_joint0" type="revolute">
+    <limit lower="-3.14000" upper="3.14000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="-0.00000 1.57080 0.00000" xyz="0.20500 -0.09380 0.00162"/>
+    <parent link="base_link"/>
+    <child link="fr_link0"/>
+    <axis xyz="0.00000 0.00000 1.00000"/>
+  </joint>
+  <joint name="fr_joint1" type="revolute">
+    <limit lower="-3.14000" upper="3.14000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="-1.57080 -1.57080 0.00000" xyz="-0.00026 -0.01767 -0.05190"/>
+    <parent link="fr_link0"/>
+    <child link="fr_link1"/>
+    <axis xyz="0.00000 0.00000 1.00000"/>
+  </joint>
+  <joint name="fr_joint2" type="revolute">
+    <limit lower="-3.14000" upper="3.14000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="-0.00000 0.00000 0.00000" xyz="0.07999 0.00001 -0.00825"/>
+    <parent link="fr_link1"/>
+    <child link="fr_link2"/>
+    <axis xyz="0.00000 0.00000 1.00000"/>
+  </joint>
+  <joint name="fr_joint4" type="revolute">
+    <limit lower="-3.14000" upper="3.14000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="-0.00000 0.00000 0.00000" xyz="-0.00001 0.07999 -0.00825"/>
+    <parent link="fr_link5"/>
+    <child link="fr_link4"/>
+    <axis xyz="0.00000 0.00000 1.00000"/>
+  </joint>
+  <joint name="fr_joint5" type="revolute">
+    <limit lower="-3.14000" upper="3.14000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="-1.57080 -1.57080 0.00000" xyz="-0.00023 -0.01767 -0.13390"/>
+    <parent link="fr_link0"/>
+    <child link="fr_link5"/>
+    <axis xyz="0.00000 0.00000 1.00000"/>
+  </joint>
+  <joint name="rl_joint0" type="revolute">
+    <limit lower="-3.14000" upper="3.14000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="0.00000 -1.57080 0.00000" xyz="-0.20500 0.09541 0.00215"/>
+    <parent link="base_link"/>
+    <child link="rl_link0"/>
+    <axis xyz="0.00000 0.00000 1.00000"/>
+  </joint>
+  <joint name="rl_joint1" type="revolute">
+    <limit lower="-3.14000" upper="3.14000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="1.57080 1.57080 0.00000" xyz="0.00026 0.01767 -0.05190"/>
+    <parent link="rl_link0"/>
+    <child link="rl_link1"/>
+    <axis xyz="0.00000 0.00000 1.00000"/>
+  </joint>
+  <joint name="rl_joint2" type="revolute">
+    <limit lower="-3.14000" upper="3.14000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="0.00000 0.00000 -0.00000" xyz="-0.07999 -0.00001 -0.00825"/>
+    <parent link="rl_link1"/>
+    <child link="rl_link2"/>
+    <axis xyz="0.00000 0.00000 1.00000"/>
+  </joint>
+  <joint name="rl_joint4" type="revolute">
+    <limit lower="-3.14000" upper="3.14000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="0.00000 0.00000 0.00000" xyz="0.00001 -0.07999 -0.00825"/>
+    <parent link="rl_link5"/>
+    <child link="rl_link4"/>
+    <axis xyz="0.00000 0.00000 1.00000"/>
+  </joint>
+  <joint name="rl_joint5" type="revolute">
+    <limit lower="-3.14000" upper="3.14000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="1.57080 1.57080 0.00000" xyz="0.00023 0.01767 -0.13390"/>
+    <parent link="rl_link0"/>
+    <child link="rl_link5"/>
+    <axis xyz="0.00000 0.00000 1.00000"/>
+  </joint>
+  <joint name="rr_joint0" type="revolute">
+    <limit lower="-3.14000" upper="3.14000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="0.00000 -1.57080 0.00000" xyz="-0.20500 -0.09459 0.00215"/>
+    <parent link="base_link"/>
+    <child link="rr_link0"/>
+    <axis xyz="0.00000 0.00000 1.00000"/>
+  </joint>
+  <joint name="rr_joint1" type="revolute">
+    <limit lower="-3.14000" upper="3.14000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="1.57080 1.57080 0.00000" xyz="0.00011 -0.01748 -0.05170"/>
+    <parent link="rr_link0"/>
+    <child link="rr_link1"/>
+    <axis xyz="0.00000 0.00000 1.00000"/>
+  </joint>
+  <joint name="rr_joint2" type="revolute">
+    <limit lower="-3.14000" upper="3.14000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="0.00000 0.00000 -0.00000" xyz="-0.07999 -0.00001 0.00825"/>
+    <parent link="rr_link1"/>
+    <child link="rr_link2"/>
+    <axis xyz="0.00000 0.00000 1.00000"/>
+  </joint>
+  <joint name="rr_joint4" type="revolute">
+    <limit lower="-3.14000" upper="3.14000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="0.00000 0.00000 -0.00000" xyz="0.00001 -0.07999 0.00825"/>
+    <parent link="rr_link5"/>
+    <child link="rr_link4"/>
+    <axis xyz="0.00000 0.00000 1.00000"/>
+  </joint>
+  <joint name="rr_joint5" type="revolute">
+    <limit lower="-3.14000" upper="3.14000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="1.57080 1.57080 0.00000" xyz="0.00008 -0.01748 -0.13370"/>
+    <parent link="rr_link0"/>
+    <child link="rr_link5"/>
+    <axis xyz="0.00000 0.00000 1.00000"/>
+  </joint>
+  <link name="base_link">
+    <inertial>
+      <inertia ixx="0.00315" ixy="0.00000" ixz="0.00000" iyy="0.01903" iyz="-0.00000" izz="0.01944"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="-0.00001 0.00040 -0.00279"/>
+      <mass value="1.00000"/>
+    </inertial>
+    <visual name="base_link_visual">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <geometry>
+        <mesh filename="../meshes/stl/base_link.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="fl_link0">
+    <inertial>
+      <inertia ixx="0.00025" ixy="-0.00000" ixz="-0.00002" iyy="0.00147" iyz="0.00000" izz="0.00133"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="-0.00021 -0.00223 -0.09292"/>
+      <mass value="0.50000"/>
+    </inertial>
+    <visual name="fl_link0_visual">
+      <origin rpy="0.00000 -1.57080 0.00000" xyz="0.00000 -0.00000 -0.00000"/>
+      <geometry>
+        <mesh filename="../meshes/stl/fl_link0.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="fl_link1">
+    <inertial>
+      <inertia ixx="0.00002" ixy="0.00002" ixz="0.00000" iyy="0.00032" iyz="-0.00000" izz="0.00032"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.02888 0.00002 0.00661"/>
+      <mass value="0.30000"/>
+    </inertial>
+    <visual name="fl_link1_visual">
+      <origin rpy="1.57080 0.00000 0.00000" xyz="0.00000 -0.00000 -0.00000"/>
+      <material name="leg_linkage"/>
+      <geometry>
+        <mesh filename="../meshes/stl/fl_link1.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="fl_link2">
+    <inertial>
+      <inertia ixx="0.00079" ixy="0.00003" ixz="0.00027" iyy="0.00088" iyz="-0.00007" izz="0.00012"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="-0.03247 0.09410 -0.00380"/>
+      <mass value="0.30000"/>
+    </inertial>
+    <visual name="fl_link2_visual">
+      <origin rpy="1.57080 0.00000 0.00000" xyz="0.00000 -0.00000 -0.00000"/>
+      <geometry>
+        <mesh filename="../meshes/stl/fl_link2.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="fl_link4">
+    <inertial>
+      <inertia ixx="0.00001" ixy="0.00000" ixz="-0.00005" iyy="0.00049" iyz="0.00000" izz="0.00048"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.06459 0.00733 0.00000"/>
+      <mass value="0.30000"/>
+    </inertial>
+    <visual name="fl_link4_visual">
+      <origin rpy="1.57080 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <geometry>
+        <mesh filename="../meshes/stl/fl_link4.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="fl_link5">
+    <inertial>
+      <inertia ixx="0.00028" ixy="-0.00000" ixz="0.00000" iyy="0.00028" iyz="0.00002" izz="0.00002"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="-0.00001 0.02888 0.00661"/>
+      <mass value="0.30000"/>
+    </inertial>
+    <visual name="fl_link5_visual">
+      <origin rpy="1.57080 0.00000 0.00000" xyz="0.00000 -0.00000 -0.00000"/>
+      <geometry>
+        <mesh filename="../meshes/stl/fl_link5.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="fr_link0">
+    <inertial>
+      <inertia ixx="0.00025" ixy="0.00000" ixz="-0.00002" iyy="0.00147" iyz="-0.00000" izz="0.00133"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="-0.00021 0.00223 -0.09292"/>
+      <mass value="0.50000"/>
+    </inertial>
+    <visual name="fr_link0_visual">
+      <origin rpy="0.00000 -1.57080 0.00000" xyz="-0.00000 -0.00000 0.00000"/>
+      <geometry>
+        <mesh filename="../meshes/stl/fr_link0.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="fr_link1">
+    <inertial>
+      <inertia ixx="0.00002" ixy="-0.00002" ixz="0.00000" iyy="0.00032" iyz="0.00000" izz="0.00032"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.02888 0.00002 -0.00661"/>
+      <mass value="0.30000"/>
+    </inertial>
+    <visual name="fr_link1_visual">
+      <origin rpy="1.57080 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <material name="leg_linkage"/>
+      <geometry>
+        <mesh filename="../meshes/stl/fr_link1.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="fr_link2">
+    <inertial>
+      <inertia ixx="0.00079" ixy="-0.00003" ixz="0.00027" iyy="0.00088" iyz="0.00007" izz="0.00012"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="-0.03247 0.09410 0.00380"/>
+      <mass value="0.30000"/>
+    </inertial>
+    <visual name="fr_link2_visual">
+      <origin rpy="1.57080 0.00000 0.00000" xyz="0.00000 -0.00000 -0.00000"/>
+      <geometry>
+        <mesh filename="../meshes/stl/fr_link2.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="fr_link4">
+    <inertial>
+      <inertia ixx="0.00001" ixy="-0.00000" ixz="-0.00005" iyy="0.00049" iyz="-0.00000" izz="0.00048"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.06459 0.00733 -0.00000"/>
+      <mass value="0.30000"/>
+    </inertial>
+    <visual name="fr_link4_visual">
+      <origin rpy="1.57080 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <geometry>
+        <mesh filename="../meshes/stl/fr_link4.001.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="fr_link5">
+    <inertial>
+      <inertia ixx="0.00028" ixy="0.00000" ixz="0.00000" iyy="0.00028" iyz="-0.00002" izz="0.00002"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="-0.00001 0.02888 -0.00661"/>
+      <mass value="0.30000"/>
+    </inertial>
+    <visual name="fr_link5_visual">
+      <origin rpy="1.57080 0.00000 0.00000" xyz="0.00000 -0.00000 -0.00000"/>
+      <geometry>
+        <mesh filename="../meshes/stl/fr_link5.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="rl_link0">
+    <inertial>
+      <inertia ixx="0.00025" ixy="0.00000" ixz="0.00002" iyy="0.00147" iyz="0.00000" izz="0.00133"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00021 -0.00223 -0.09292"/>
+      <mass value="0.50000"/>
+    </inertial>
+    <visual name="rl_link0_visual">
+      <origin rpy="-0.00000 1.57080 0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <geometry>
+        <mesh filename="../meshes/stl/rl_link0.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="rl_link1">
+    <inertial>
+      <inertia ixx="0.00002" ixy="-0.00002" ixz="-0.00000" iyy="0.00032" iyz="-0.00000" izz="0.00032"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="-0.02888 -0.00002 -0.00661"/>
+      <mass value="0.30000"/>
+    </inertial>
+    <visual name="rl_link1_visual">
+      <origin rpy="-1.57080 0.00000 0.00000" xyz="0.00000 -0.00000 -0.00000"/>
+      <material name="leg_linkage"/>
+      <geometry>
+        <mesh filename="../meshes/stl/rl_link1.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="rl_link2">
+    <inertial>
+      <inertia ixx="0.00079" ixy="-0.00003" ixz="-0.00027" iyy="0.00088" iyz="-0.00007" izz="0.00012"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.03247 -0.09410 0.00380"/>
+      <mass value="0.30000"/>
+    </inertial>
+    <visual name="rl_link2_visual">
+      <origin rpy="-1.57080 0.00000 0.00000" xyz="0.00000 0.00000 -0.00000"/>
+      <geometry>
+        <mesh filename="../meshes/stl/rl_link2.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="rl_link4">
+    <inertial>
+      <inertia ixx="0.00001" ixy="-0.00000" ixz="0.00005" iyy="0.00049" iyz="0.00000" izz="0.00048"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="-0.06459 -0.00733 -0.00000"/>
+      <mass value="0.30000"/>
+    </inertial>
+    <visual name="rl_link4_visual">
+      <origin rpy="-1.57080 0.00000 0.00000" xyz="0.00000 -0.00000 -0.00000"/>
+      <geometry>
+        <mesh filename="../meshes/stl/rl_link4.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="rl_link5">
+    <inertial>
+      <inertia ixx="0.00028" ixy="0.00000" ixz="-0.00000" iyy="0.00028" iyz="0.00002" izz="0.00002"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00001 -0.02888 -0.00661"/>
+      <mass value="0.30000"/>
+    </inertial>
+    <visual name="rl_link5_visual">
+      <origin rpy="-1.57080 0.00000 0.00000" xyz="0.00000 -0.00000 0.00000"/>
+      <geometry>
+        <mesh filename="../meshes/stl/rl_link5.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="rr_link0">
+    <inertial>
+      <inertia ixx="0.00025" ixy="-0.00000" ixz="0.00002" iyy="0.00147" iyz="-0.00000" izz="0.00133"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00005 0.00242 -0.09273"/>
+      <mass value="0.50000"/>
+    </inertial>
+    <visual name="rr_link0_visual">
+      <origin rpy="-0.00000 1.57080 0.00000" xyz="0.00000 0.00000 -0.00000"/>
+      <geometry>
+        <mesh filename="../meshes/stl/rr_link0.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="rr_link1">
+    <inertial>
+      <inertia ixx="0.00002" ixy="0.00002" ixz="-0.00000" iyy="0.00032" iyz="0.00000" izz="0.00032"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="-0.02888 -0.00002 0.00661"/>
+      <mass value="0.30000"/>
+    </inertial>
+    <visual name="rr_link1_visual">
+      <origin rpy="-1.57080 0.00000 0.00000" xyz="-0.00000 -0.00000 -0.00000"/>
+      <material name="leg_linkage"/>
+      <geometry>
+        <mesh filename="../meshes/stl/rr_link1.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="rr_link2">
+    <inertial>
+      <inertia ixx="0.00079" ixy="0.00003" ixz="-0.00027" iyy="0.00088" iyz="0.00007" izz="0.00012"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.03247 -0.09410 -0.00380"/>
+      <mass value="0.30000"/>
+    </inertial>
+    <visual name="rr_link2_visual">
+      <origin rpy="-1.57080 0.00000 0.00000" xyz="0.00000 0.00000 -0.00000"/>
+      <geometry>
+        <mesh filename="../meshes/stl/rr_link2.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="rr_link4">
+    <inertial>
+      <inertia ixx="0.00001" ixy="0.00000" ixz="0.00005" iyy="0.00049" iyz="-0.00000" izz="0.00048"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="-0.06459 -0.00733 0.00000"/>
+      <mass value="0.30000"/>
+    </inertial>
+    <visual name="rr_link4_visual">
+      <origin rpy="-1.57080 0.00000 0.00000" xyz="0.00000 -0.00000 -0.00000"/>
+      <geometry>
+        <mesh filename="../meshes/stl/rr_link4.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="rr_link5">
+    <inertial>
+      <inertia ixx="0.00028" ixy="-0.00000" ixz="-0.00000" iyy="0.00028" iyz="-0.00002" izz="0.00002"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00001 -0.02888 0.00661"/>
+      <mass value="0.30000"/>
+    </inertial>
+    <visual name="rr_link5_visual">
+      <origin rpy="-1.57080 0.00000 0.00000" xyz="0.00000 0.00000 -0.00000"/>
+      <geometry>
+        <mesh filename="../meshes/stl/rr_link5.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <material name="leg_linkage">
+    <color rgba="0.80000 0.80000 0.80000 1.00000"/>
+  </material>
+</robot>

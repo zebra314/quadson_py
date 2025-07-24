@@ -1,0 +1,3 @@
+Instantiated with filepath=None->None, scale=[1.0, 1.0, 1.0], mesh=<bpy_struct, Mesh("base_link") at 0x70248e7d1008>, meshname=base_link, material=None, mesh_orientation=None, {}
+->trying export of <bpy_struct, Mesh("base_link") at 0x70248e7d1008> to /home/alfonso/Git_workspace/Quadson/quadson_sim/assets/whole_body/meshes/stl/base_link.stl
+->wrote stl to /home/alfonso/Git_workspace/Quadson/quadson_sim/assets/whole_body/meshes/stl/base_link.stl from bpy_types.Mesh

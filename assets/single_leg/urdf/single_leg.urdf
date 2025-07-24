@@ -1,0 +1,99 @@
+<robot name="single_leg" version="1.0">
+  <joint name="joint1" type="revolute">
+    <limit lower="-3.14000" upper="3.14000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="-1.57080 0.00000 0.00000" xyz="0.04100 0.01800 0.00003"/>
+    <parent link="link0"/>
+    <child link="link1"/>
+    <axis xyz="0.00000 0.00000 1.00000"/>
+  </joint>
+  <joint name="joint2" type="revolute">
+    <limit lower="-3.14000" upper="3.14000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="-0.00000 0.00000 0.00000" xyz="0.07999 0.00001 0.00825"/>
+    <parent link="link1"/>
+    <child link="link2"/>
+    <axis xyz="0.00000 0.00000 1.00000"/>
+  </joint>
+  <joint name="joint4" type="revolute">
+    <limit lower="-3.14000" upper="3.14000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="-0.00000 0.00000 0.00000" xyz="-0.00001 0.07999 0.00825"/>
+    <parent link="link4"/>
+    <child link="link3"/>
+    <axis xyz="0.00000 0.00000 1.00000"/>
+  </joint>
+  <joint name="joint5" type="revolute">
+    <limit lower="-3.14000" upper="3.14000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="-1.57080 0.00000 0.00000" xyz="-0.04100 0.01800 -0.00000"/>
+    <parent link="link0"/>
+    <child link="link4"/>
+    <axis xyz="0.00000 0.00000 1.00000"/>
+  </joint>
+  <link name="link0">
+    <inertial>
+      <inertia ixx="0.00010" ixy="0.00000" ixz="-0.00001" iyy="0.00059" iyz="-0.00000" izz="0.00053"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="-0.00003 -0.00190 -0.00002"/>
+      <mass value="0.20000"/>
+    </inertial>
+    <visual name="link0_visual">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <geometry>
+        <mesh filename="../meshes/stl/link0.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link1">
+    <inertial>
+      <inertia ixx="0.00001" ixy="-0.00002" ixz="-0.00000" iyy="0.00022" iyz="-0.00000" izz="0.00021"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.02888 0.00002 0.00661"/>
+      <mass value="0.20000"/>
+    </inertial>
+    <visual name="link1_visual">
+      <origin rpy="1.57080 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <material name="leg_linkage"/>
+      <geometry>
+        <mesh filename="../meshes/stl/link1.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link2">
+    <inertial>
+      <inertia ixx="0.00053" ixy="-0.00002" ixz="-0.00018" iyy="0.00058" iyz="-0.00005" izz="0.00008"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="-0.03247 0.09410 -0.00380"/>
+      <mass value="0.20000"/>
+    </inertial>
+    <visual name="link2_visual">
+      <origin rpy="1.57080 0.00000 0.00000" xyz="-0.03281 0.09447 0.00000"/>
+      <geometry>
+        <mesh filename="../meshes/stl/link2.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link3">
+    <inertial>
+      <inertia ixx="0.00001" ixy="-0.00000" ixz="0.00003" iyy="0.00032" iyz="0.00000" izz="0.00032"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.06459 0.00733 0.00000"/>
+      <mass value="0.20000"/>
+    </inertial>
+    <visual name="link3_visual">
+      <origin rpy="1.57080 0.00000 0.00000" xyz="0.12919 0.01447 -0.00000"/>
+      <geometry>
+        <mesh filename="../meshes/stl/link3.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link4">
+    <inertial>
+      <inertia ixx="0.00018" ixy="-0.00000" ixz="0.00000" iyy="0.00019" iyz="0.00001" izz="0.00001"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="-0.00001 0.02888 0.00661"/>
+      <mass value="0.20000"/>
+    </inertial>
+    <visual name="link4_visual">
+      <origin rpy="1.57080 0.00000 0.00000" xyz="-0.00001 0.07999 0.00825"/>
+      <geometry>
+        <mesh filename="../meshes/stl/link4.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <material name="leg_linkage">
+    <color rgba="0.80000 0.80000 0.80000 1.00000"/>
+  </material>
+</robot>
