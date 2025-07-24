@@ -1,28 +1,39 @@
 # quadson_py
 
-## Can bus control
+## CAN bus control
 
-## Simulation
+For Docker users, use the following command to build and run the environment.
 
-## Build
+```sh
+make can
+```
 
-if
+For python venv users, activate your new virtual environment and run:
+
+```sh
+pip install -r env/requirements-can.txt
+pip install -e .
+```
+
+When launching the program, if you see the error messages from terminal like:
 
 ```sh
 modprobe: FATAL: Module can not found in directory /lib/modules/6.12.28-1-lts
 ```
 
-你可以先在實體機（或 VM）上用以下指令檢查 host kernel 是否支援 CAN：
+This means that the host kernel does not support CAN bus. First, check if the host kernel supports CAN bus by running:
 
 ```sh
 ls /lib/modules/$(uname -r)/kernel/net/can
 ```
 
-正常會看到：
+You should see something like:
 
 ```sh
 can.ko  can-dev.ko  can-raw.ko
 ```
+
+Then load the module manually by running:
 
 ```sh
 sudo modprobe can
@@ -30,30 +41,6 @@ sudo modprobe can_raw
 sudo modprobe can_dev
 ```
 
-### Docker
+and restart the program, the problem should be solved.
 
-```sh
-make can-build
-```
-
-```sh
-make sim-build
-```
-
-### Python virtual environment
-
-Activate your virtual environment and run:
-
-```sh
-pip install -r env/requirements-can.txt
-```
-
-```sh
-pip install -r env/requirements-sim.txt
-```
-
-Then
-
-```sh
-pip install -e .
-```
+## Simulation
